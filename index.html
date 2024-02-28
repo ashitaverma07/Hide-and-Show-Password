@@ -17,6 +17,16 @@
         let eyeicon = document.getElementById("eyeicon");
         let password = document.getElementById("password");
 
+        eyeicon.onclick = function(){
+            if(password.type === "password"){
+                password.setAttribute("type", "text");
+                eyeicon.setAttribute("src", "eye-open.png");
+            }else{
+                password.setAttribute("type", "password");
+                eyeicon.setAttribute("src", "eye-close.png");
+            }
+        }
+
 
     </script>
 </body>
